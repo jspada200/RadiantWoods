@@ -10,5 +10,6 @@ services:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
       POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_DB: db
 volumes:
   postgres-db:
