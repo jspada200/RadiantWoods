@@ -9,6 +9,10 @@ export const metadata: Metadata = {
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en" data-mode="light">
+      <head>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');        </style>
+      </head>
       <body>
         <main className="relative">{props.children}</main>
       </body>
