@@ -1,4 +1,5 @@
 import { getBaseURL } from "@lib/util/env"
+import ThemeProviderWrapper from "./ThemeProviderWrapper"
 import { Metadata } from "next"
 import "styles/globals.css"
 
@@ -16,7 +17,9 @@ export default function RootLayout(props: { children: React.ReactNode }) {
         </style>
       </head>
       <body>
-        <main className="relative">{props.children}</main>
+        <ThemeProviderWrapper>
+          <main className="relative">{props.children}</main>
+        </ThemeProviderWrapper>
       </body>
     </html>
   )
