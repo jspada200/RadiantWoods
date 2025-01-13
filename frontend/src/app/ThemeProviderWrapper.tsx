@@ -5,6 +5,7 @@ import { ThemeProvider, createTheme } from "@mui/material"
 const MuiPalette = {
   primary: {
     main: "#99a15c",
+    contrastText: "#FFF"
   },
   secondary: {
     main: "#d9e6f1",

@@ -1,7 +1,7 @@
 'use client'
-import ActionButton from "components/actionButton"
 import Link from "next/link"
 import styled from "styled-components"
+import Button from "@mui/material/Button"
 
 const StyledHeaderImage = styled.div`
   background-image: 
@@ -43,7 +43,7 @@ const Hero = () => {
           <p>bring warmth and charm to your space.</p>
           </div>
           <div>
-          <Link href="/store"><ActionButton>Shop Now</ActionButton></Link>
+          <Link href="/store"><Button variant="contained">Shop Now</Button></Link>
           </div>
       </TagLineContainer>
     </StyledHeaderImage>
