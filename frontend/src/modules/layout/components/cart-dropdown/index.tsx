@@ -15,6 +15,7 @@ import LineItemPrice from "@modules/common/components/line-item-price"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import Thumbnail from "@modules/products/components/thumbnail"
 import { ShoppingBagOutlined } from "@mui/icons-material"
+import { Badge } from "@mui/material"
 import { usePathname } from "next/navigation"
 import { Fragment, useEffect, useRef, useState } from "react"
 
@@ -87,8 +88,9 @@ const CartDropdown = ({
             href="/cart"
             data-testid="nav-cart-link"
         >
-          <ShoppingBagOutlined />
-          {`( ${totalItems})`}
+          <Badge badgeContent={totalItems} color="primary">
+            <ShoppingBagOutlined />
+          </Badge>
         </LocalizedClientLink>
         </PopoverButton>
         <Transition
