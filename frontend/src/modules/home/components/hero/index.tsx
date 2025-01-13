@@ -1,5 +1,6 @@
 'use client'
 import ActionButton from "components/actionButton"
+import Link from "next/link"
 import styled from "styled-components"
 
 const StyledHeaderImage = styled.div`
@@ -42,7 +43,7 @@ const Hero = () => {
           <p>bring warmth and charm to your space.</p>
           </div>
           <div>
-          <ActionButton>Shop Now</ActionButton>
+          <Link href="/store"><ActionButton>Shop Now</ActionButton></Link>
           </div>
       </TagLineContainer>
     </StyledHeaderImage>

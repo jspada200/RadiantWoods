@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
 }
 
-export default async function Home(props: {
+export default async function About(props: {
   params: Promise<{ countryCode: string }>
 }) {
   const params = await props.params
@@ -27,15 +27,10 @@ export default async function Home(props: {
   if (!collections || !region) {
     return null
   }
-  console.log("Collections: ", collections)
+
   return (
     <>
-      <Hero />
-      <div className="py-12">
-        <ul className="flex flex-col gap-x-6">
-          <FeaturedProducts collections={collections} region={region} />
-        </ul>
-      </div>
+      About!
     </>
   )
 }
